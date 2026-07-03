@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gibrael Bienvernido Bagaskara | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
@@ -13,9 +15,7 @@
 
     <!-- Navbar -->
     <header class="fixed top-0 left-0 w-full border-b border-slate-800 bg-slate-950/80 backdrop-blur-md z-50">
-
         <nav class="max-w-7xl mx-auto px-6">
-
             <div class="flex items-center justify-between h-20">
 
                 <!-- Logo -->
@@ -23,29 +23,89 @@
                     Gibrael<span class="text-cyan-400">.</span>
                 </a>
 
-                <!-- Menu -->
+                <!-- Desktop Menu -->
                 <ul class="hidden md:flex items-center gap-6">
-                    <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
-                    <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
-                    <li><a href="#skills" class="hover:text-blue-400 transition">Skills</a></li>
-                    <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+                    <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+                    <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
                 </ul>
 
-                <!-- Button -->
+                <!-- Desktop Button -->
                 <a href="#"
-                    class="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 transition px-5 py-3 rounded-xl font-semibold">
+                    class="hidden md:inline-flex bg-cyan-500 hover:bg-cyan-600 transition px-5 py-3 rounded-xl font-semibold">
                     Download CV
                 </a>
+
+                <!-- Hamburger Button -->
+                <button
+                    id="menu-btn"
+                    class="md:hidden text-3xl text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div
+                id="mobile-menu"
+                class="hidden md:hidden mt-4 rounded-2xl bg-slate-900/95 border border-slate-700 backdrop-blur-lg">
+
+                <ul class="flex flex-col py-4">
+
+                    <li>
+                        <a href="#home"
+                            class="block px-6 py-3 hover:bg-cyan-500/20 transition">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about"
+                            class="block px-6 py-3 hover:bg-cyan-500/20 transition">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills"
+                            class="block px-6 py-3 hover:bg-cyan-500/20 transition">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects"
+                            class="block px-6 py-3 hover:bg-cyan-500/20 transition">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
+                            class="block px-6 py-3 hover:bg-cyan-500/20 transition">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="px-6 pt-4">
+                        <a href="#"
+                            class="block text-center bg-cyan-500 hover:bg-cyan-600 rounded-xl py-3 font-semibold transition">
+                            Download CV
+                        </a>
+                    </li>
+
+                </ul>
 
             </div>
 
         </nav>
-
     </header>
 
     <!-- Hero -->
 
-    <section class="relative min-h-screen flex items-center overflow-hidden pt-24">    
+    <section class="relative min-h-[90vh] flex items-center overflow-hidden pt-24 pb-5">    
 
     <div class="absolute top-24 left-10 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl"></div>
     <div class="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl"></div>
@@ -94,73 +154,56 @@
 
                 </div>
 
-                <div class="flex flex-wrap gap-3 mt-10">
-                  <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700">
-                      HTML
-                  </span>
+                <div class="flex flex-wrap gap-4 mt-10">
+                  <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <i class="devicon-html5-plain colored text-xl"></i>
+                     HTML5
+                    </span>
 
-                  <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700">
-                      CSS
-                  </span>
+                  <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <i class="devicon-css3-plain colored text-xl"></i>
+                    CSS3
+                    </span>
 
-                  <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700">
-                      Bootstrap
-                  </span>
+                  <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <i class="devicon-bootstrap-plain colored text-xl"></i>
+                    Bootstrap
+                    </span>
 
-                  <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700">
-                      Tailwind CSS
-                  </span>
+                  <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <i class="devicon-tailwindcss-original colored text-xl"></i>
+                    Tailwind CSS
+                    </span>
 
-                  <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700">
-                      JavaScript
-                  </span>
+                  <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <i class="devicon-javascript-plain colored text-xl"></i>
+                    JavaScript
+                    </span>
 
-                  <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700">
+                  <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <i class="devicon-php-plain colored text-xl"></i>
                       PHP
                   </span>
 
-                  <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700">
+                  <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <i class="devicon-mysql-original colored text-xl"></i>
                       MySQL
                   </span>
                 </div>
-
-                <div class="flex flex-wrap gap-6 mt-10 text-slate-400">
-
-                  <a href="#" class="hover:text-blue-500 transition">
-                      GitHub
-                  </a>
-                  <a href="#" class="hover:text-blue-500 transition">
-                      LinkedIn
-                  </a>
-                  <a href="#" class="hover:text-blue-500 transition">
-                      instagram
-                  </a>
-                  <a href="#" class="hover:text-blue-500 transition">
-                      WhatsApp
-                  </a>
-                  <a href="#" class="hover:text-blue-500 transition">
-                      Email
-                  </a>
-              </div>
-
             </div>
 
             <!-- Hero Kanan -->
             <div class="flex justify-center">
 
-                <div class="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/20 shadow-2xl shadow-blue-500/20 flex items-center justify-center overflow-hidden">
+                <div class="relative w-[260px] h-[260px] sm:w-[300px] sm:h-[300px] lg:w-[360px] lg:h-[360px] rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/20 shadow-2xl shadow-blue-500/20 flex items-center justify-center overflow-hidden">
                     <img
                         src="/src/assets/images/profile.jpeg"
                         alt="Profile"
                         class="w-full h-full object-cover">
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
 <!-- ================= ABOUT ================= -->
@@ -179,7 +222,7 @@
         </div>
 
         <!-- Grid -->
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
 
             <!-- Kolom Kiri -->
             <div class="flex justify-center">
@@ -211,48 +254,100 @@
 
                 </p>
 
+                <div class="grid grid-cols-2 gap-6 mt-10">
+
+                    <div class="text-center bg-slate-800 rounded-2xl p-5 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+
+                        <h3 class="text-3xl font-bold text-cyan-400">
+                            2026
+                        </h3>
+
+                        <p class="text-slate-400 mt-2 leading-7">
+                            Graduate
+                        </p>
+
+                    </div>
+
+                    <div class="text-center bg-slate-800 rounded-2xl p-5 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+
+                        <h3 class="text-3xl font-bold text-cyan-400">
+                            1+
+                        </h3>
+
+                        <p class="text-slate-400 mt-2 leading-7">
+                            Internship
+                        </p>
+
+                    </div>
+
+                    <div class="text-center bg-slate-800 rounded-2xl p-5 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+
+                        <h3 class="text-3xl font-bold text-cyan-400">
+                            7+
+                        </h3>
+
+                        <p class="text-slate-400 mt-2 leading-7">
+                            Technologies
+                        </p>
+
+                    </div>
+
+                    <div class="text-center bg-slate-800 rounded-2xl p-5 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+
+                        <h3 class="text-3xl font-bold text-cyan-400">
+                            100%
+                        </h3>
+
+                        <p class="text-slate-400 mt-2 leading-7">
+                            Passion
+                        </p>
+
+                    </div>
+
+                </div>
+
                 <p class="mt-6 text-slate-400 leading-8 text-justify">
 
                     I am passionate about learning new technologies, solving problems, and continuously improving my skills to become a professional Web Developer.
 
                 </p>
-                <div class="grid grid-cols-2 gap-5 mt-10">
-                    <div class="bg-slate-800 rounded-2xl p-5">
-                        <h4 class="text-cyan-400 font-semibold">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+                    <div class="bg-slate-800 rounded-2xl p-5 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                        <h4 class="text-cyan-400 font-semibold text-lg">
                             🎓 Education
                         </h4>
 
-                        <p class="text-slate-400 mt-2">
+                        <p class="text-slate-400 mt-2 leading-7">
                             Bachelor of Computer Science
                         </p>
                     </div>
 
-                    <div class="bg-slate-800 rounded-2xl p-5">
-                        <h4 class="text-cyan-400 font-semibold">
+                    <div class="bg-slate-800 rounded-2xl p-5 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                        <h4 class="text-cyan-400 font-semibold text-lg">
                             💼 Experience
                         </h4>
 
-                        <p class="text-slate-400 mt-2">
+                        <p class="text-slate-400 mt-2 leading-7">
                             HR Technology Intern
                         </p>
                     </div>
 
-                    <div class="bg-slate-800 rounded-2xl p-5">
-                        <h4 class="text-cyan-400 font-semibold">
+                    <div class="bg-slate-800 rounded-2xl p-5 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                        <h4 class="text-cyan-400 font-semibold text-lg">
                             📍 Location
                         </h4>
 
-                        <p class="text-slate-400 mt-2">
-                            Indonesia
+                        <p class="text-slate-400 mt-2 leading-7">
+                            Jakarta, Indonesia
                         </p>
                     </div>
 
-                    <div class="bg-slate-800 rounded-2xl p-5">
-                        <h4 class="text-cyan-400 font-semibold">
+                    <div class="bg-slate-800 rounded-2xl p-5 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                        <h4 class="text-cyan-400 font-semibold text-lg">
                             🌐 Languages
                         </h4>
 
-                        <p class="text-slate-400 mt-2">
+                        <p class="text-slate-400 mt-2 leading-7">
                             Indonesian, English
                         </p>
                     </div>
@@ -262,7 +357,259 @@
     </div>
 </section>
 
-<script type="module" src="/src/js/main.js"></script>
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="py-24 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Heading -->
+        <div class="text-center mb-16">
 
+            <h2 class="text-4xl font-bold">
+                My <span class="text-cyan-400">Skills</span>
+            </h2>
+
+            <p class="text-slate-400 mt-4">
+                Technologies and tools that I use to build modern web applications.
+            </p>
+
+        </div>
+
+        <!-- Skill Cards -->
+        <div class="bg-slate-800 rounded-3xl border border-transparent p-8 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
+                <div class="w-14 h-1 bg-cyan-400 rounded-full mb-5"></div>
+                <h3 class="text-2xl font-bold text-cyan-400">
+                    💻 Frontend Development
+                </h3>
+
+                <p class="text-slate-400 mt-4 leading-7">
+                    Building responsive and interactive user interfaces using modern web technologies.
+                </p>
+
+                <div class="flex flex-wrap gap-3 mt-6">
+
+                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                        HTML5
+                    </span>
+
+                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                        CSS3
+                    </span>
+
+                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                        JavaScript
+                    </span>
+
+                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                        Bootstrap
+                    </span>
+
+                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                        Tailwind CSS
+                    </span>
+
+                </div>
+
+            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        </div>
+    </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-24 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Heading -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold">
+                Projects <span class="text-cyan-400">& Experience</span>
+            </h2>
+
+            <p class="text-slate-400 mt-4 max-w-2xl mx-auto leading-7">
+                A selection of projects and internship experiences that demonstrate my skills in web development and problem-solving.
+            </p>
+        </div>
+
+        <!-- Project Grid -->
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="group bg-slate-800 rounded-3xl overflow-hidden border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
+                <!-- Project Image -->
+                <div class="p-6 bg-slate-900">
+                    <img
+                        src="/src/assets/images/projek.jpg"
+                        alt="Learning Management System"
+                        class="w-full rounded-2xl border border-slate-700 shadow-lg transition-all duration-300 group-hover:scale-[1.02]">
+                </div>
+                <!-- Project Content -->
+                <div class="p-8">
+                    <!-- Accent Line -->
+                    <div class="w-12 h-1 bg-cyan-400 rounded-full mb-6"></div>
+                    <!-- Badge -->
+                    <div class="flex flex-wrap items-center gap-2">
+
+                        <span class="inline-flex items-center px-4 py-2 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-sm font-semibold">
+                            💼 Internship
+                        </span>
+
+                        <span class="inline-flex items-center px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-sm font-semibold">
+                            ✔ Completed
+                        </span>
+
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-2xl font-bold mt-6">
+                        Learning Management System (LMS)
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-slate-400 mt-5 leading-8">
+                        Developed a Learning Management System (LMS) during my internship using
+                        WordPress and Tutor LMS. Customized the website interface with CSS,
+                        configured learning features, and supported digital learning activities
+                        based on organizational requirements.
+                    </p>
+
+                    <!-- Project Information -->
+                    <div class="mt-6 space-y-3">
+
+                        <div class="flex items-center gap-3 text-slate-400">
+                            <span class="text-cyan-400">📍</span>
+                            <p>Local Development Environment</p>
+                        </div>
+
+                        <div class="flex items-center gap-3 text-slate-400">
+                            <span class="text-cyan-400">📄</span>
+                            <p>Screenshot from Internship Report</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="border-slate-700/60 my-8">
+
+                    <!-- Tech Stack -->
+                    <h4 class="font-semibold text-white">
+                        Tech Stack
+                    </h4>
+
+                    <div class="flex flex-wrap gap-3 mt-4">
+
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                            <i class="devicon-wordpress-plain colored text-xl"></i>
+                            WordPress
+                        </span>
+
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                            🎓 Tutor LMS
+                        </span>
+
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                            <i class="devicon-css3-plain colored text-xl"></i>
+                            CSS
+                        </span>
+
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                            🔌 Plugin Integration
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-24 bg-slate-950">
+    <div class="max-w-5xl mx-auto px-6">
+        <!-- Heading -->
+        <div class="text-center">
+            <h2 class="text-4xl font-bold">
+                Let's <span class="text-cyan-400">Work Together</span>
+            </h2>
+
+            <p class="text-slate-400 mt-5 max-w-2xl mx-auto leading-8">
+                Have a project, internship, or job opportunity?
+                Feel free to contact me through any of the platforms below.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+            <a href="mailto:bagaskaragibrael@gmail.com"
+                class="group block cursor-pointer bg-slate-800 rounded-3xl p-6 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
+                <div class="text-4xl text-slate-400 transition-all duration-300 group-hover:text-cyan-400 group-hover:scale-110">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <h3 class="text-xl font-semibold mt-5">
+                    Email
+                </h3>
+                <p class="text-slate-400 mt-3 break-all transition-colors duration-300 group-hover:text-cyan-400">
+                    bagaskaragibrael
+                </p>
+            </a>
+            <a href="https://github.com/bagas046"
+                target="_blank"
+                class="group block cursor-pointer bg-slate-800 rounded-3xl p-6 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
+                <div class="text-4xl text-slate-400 transition-all duration-300 group-hover:text-cyan-400 group-hover:scale-110">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <h3 class="text-xl font-semibold mt-5">
+                    GitHub
+                </h3>
+                <p class="text-slate-400 mt-3 break-all transition-colors duration-300 group-hover:text-cyan-400">
+                    bagas046
+                </p>
+            </a>
+            <a href="https://www.linkedin.com/in/gibrael-bagaskara-97ab83339"
+                target="_blank"
+                class="group block cursor-pointer bg-slate-800 rounded-3xl p-6 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
+                <div class="text-4xl text-slate-400 transition-all duration-300 group-hover:text-cyan-400 group-hover:scale-110">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <h3 class="text-xl font-semibold mt-5">
+                    LinkedIn
+                </h3>
+                <p class="text-slate-400 mt-3 break-all transition-colors duration-300 group-hover:text-cyan-400">
+                    Gibrael Bagaskara
+                </p>
+            </a>
+            <a href="https://wa.me/6282323347178"
+                target="_blank"
+                class="group block cursor-pointer bg-slate-800 rounded-3xl p-6 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
+                <div class="text-4xl text-slate-400 transition-all duration-300 group-hover:text-cyan-400 group-hover:scale-110">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <h3 class="text-xl font-semibold mt-5">
+                    WhatsApp
+                </h3>
+                <p class="text-slate-400 mt-3 transition-colors duration-300 group-hover:text-cyan-400">
+                    +62 823-2334-7178
+                </p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+
+    mobileMenu.classList.toggle("hidden");
+
+    const icon = menuBtn.querySelector("i");
+
+    if (mobileMenu.classList.contains("hidden")) {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    } else {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+    }
+
+});
+</script>
+<script src="https://code.iconify.design/iconify-icon/3.1.1/iconify-icon.min.js"></script>
+<script type="module" src="/src/js/main.js"></script>
 </body>
 </html>
