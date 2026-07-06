@@ -1,13 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gibrael Bienvernido Bagaskara | Portfolio</title>
+  <title>Gibrael Bienvernido Bagaskara | Frontend Developer Portfolio</title>
+  <meta name="description" content="Frontend Developer portfolio of Gibrael Bagaskara. Fresh Graduate in Computer Science specializing in HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, PHP, and MySQL." />
+  <meta name="keywords" content="Gibrael Bagaskara, Frontend Developer, Web Developer, Portfolio, HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, PHP, MySQL" />
+  <meta name="author" content="Gibrael Bienvernido Bagaskara" />
+  <meta name="theme-color" content="#020617" />
+  <meta property="og:title" content="Gibrael Bagaskara | Frontend Developer Portfolio" />
+  <meta property="og:description" content="Portfolio website showcasing my projects, skills, and experience as a Frontend Developer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/preview.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 
@@ -25,15 +36,15 @@
 
                 <!-- Desktop Menu -->
                 <ul class="hidden md:flex items-center gap-6">
-                    <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
-                    <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
-                    <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
-                    <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
-                    <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+                    <li><a href="#home" class="nav-link hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="#about" class="nav-link hover:text-cyan-400 transition">About</a></li>
+                    <li><a href="#skills" class="nav-link hover:text-cyan-400 transition">Skills</a></li>
+                    <li><a href="#projects" class="nav-link hover:text-cyan-400 transition">Projects</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-cyan-400 transition">Contact</a></li>
                 </ul>
 
                 <!-- Desktop Button -->
-                <a href="#"
+                <a href="/public/CV_Gibrael_Bienvernido_Bagaskara.pdf"
                     class="hidden md:inline-flex bg-cyan-500 hover:bg-cyan-600 transition px-5 py-3 rounded-xl font-semibold">
                     Download CV
                 </a>
@@ -90,29 +101,26 @@
                     </li>
 
                     <li class="px-6 pt-4">
-                        <a href="#"
+                        <a href="/public/CV_Gibrael_Bienvernido_Bagaskara.pdf"
                             class="block text-center bg-cyan-500 hover:bg-cyan-600 rounded-xl py-3 font-semibold transition">
                             Download CV
                         </a>
                     </li>
 
                 </ul>
-
             </div>
-
         </nav>
     </header>
 
     <!-- Hero -->
-
-    <section class="relative min-h-[90vh] flex items-center overflow-hidden pt-24 pb-5">    
-
+<main>
+<section id="home" data-aos="fade-up" class="relative min-h-[90vh] flex items-center overflow-hidden pt-24 pb-5">    
     <div class="absolute top-24 left-10 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl"></div>
     <div class="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl"></div>
 
     <div class="max-w-7xl mx-auto px-6 w-full">
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
+        <div data-aos="fade-up" class="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-16">
 
             <!-- Hero Kiri -->
             <div>
@@ -198,7 +206,9 @@
                 <div class="relative w-[260px] h-[260px] sm:w-[300px] sm:h-[300px] lg:w-[360px] lg:h-[360px] rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-500/20 shadow-2xl shadow-blue-500/20 flex items-center justify-center overflow-hidden">
                     <img
                         src="/src/assets/images/profile.jpeg"
-                        alt="Profile"
+                        alt="Portrait of Gibrael Bagaskara"
+                        width="360"
+                        height="360"
                         class="w-full h-full object-cover">
                 </div>
             </div>
@@ -208,7 +218,7 @@
 
 <!-- ================= ABOUT ================= -->
 
-<section id="about" class="py-24 bg-slate-900">
+<section id="about" data-aos="fade-right" class="py-24 bg-slate-900">
     <div class="max-w-7xl mx-auto px-6">
         <!-- Judul -->
         <div class="text-center mb-16">
@@ -222,7 +232,7 @@
         </div>
 
         <!-- Grid -->
-        <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <div data-aos="fade-up" class="grid lg:grid-cols-2 gap-16 items-start">
 
             <!-- Kolom Kiri -->
             <div class="flex justify-center">
@@ -236,9 +246,11 @@
                       hover:shadow-cyan-500/20">
                     <img
                         src="/src/assets/images/profile.jpeg"
-                        alt="Profile"
+                        alt="Portrait of Gibrael Bagaskara"
+                        width="300"
+                        height="300"
+                        loading="lazy"
                         class="w-[300px] h-[300px] object-cover rounded-2xl">
-
                 </div>
             </div>
 
@@ -358,7 +370,7 @@
 </section>
 
 <!-- ================= SKILLS ================= -->
-<section id="skills" class="py-24 bg-slate-950">
+<section id="skills" data-aos="zoom-in" class="py-24 bg-slate-950">
     <div class="max-w-7xl mx-auto px-6">
         <!-- Heading -->
         <div class="text-center mb-16">
@@ -374,7 +386,7 @@
         </div>
 
         <!-- Skill Cards -->
-        <div class="bg-slate-800 rounded-3xl border border-transparent p-8 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
+        <div data-aos="zoom-in" class="bg-slate-800 rounded-3xl border border-transparent p-8 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
                 <div class="w-14 h-1 bg-cyan-400 rounded-full mb-5"></div>
                 <h3 class="text-2xl font-bold text-cyan-400">
                     💻 Frontend Development
@@ -415,7 +427,7 @@
 </section>
 
 <!-- ================= PROJECTS ================= -->
-<section id="projects" class="py-24 bg-slate-900">
+<section id="projects" data-aos="fade-up" class="py-24 bg-slate-900">
     <div class="max-w-7xl mx-auto px-6">
         <!-- Heading -->
         <div class="text-center mb-16">
@@ -431,13 +443,13 @@
         <!-- Project Grid -->
         
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div class="group bg-slate-800 rounded-3xl overflow-hidden border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
+            <div data-aos="fade-up" class="group bg-slate-800 rounded-3xl overflow-hidden border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
                 <!-- Project Image -->
                 <div class="p-6 bg-slate-900">
                     <img
                         src="/src/assets/images/projek.jpg"
-                        alt="Learning Management System"
-                        class="w-full rounded-2xl border border-slate-700 shadow-lg transition-all duration-300 group-hover:scale-[1.02]">
+                        alt="Screenshot of Learning Management System project"
+                        loading="lazy">
                 </div>
                 <!-- Project Content -->
                 <div class="p-8">
@@ -520,7 +532,7 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="py-24 bg-slate-950">
+<section id="contact" data-aos="fade-left" class="py-24 bg-slate-950">
     <div class="max-w-5xl mx-auto px-6">
         <!-- Heading -->
         <div class="text-center">
@@ -533,7 +545,7 @@
                 Feel free to contact me through any of the platforms below.
             </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+        <div data-aos="fade-up" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
             <a href="mailto:bagaskaragibrael@gmail.com"
                 class="group block cursor-pointer bg-slate-800 rounded-3xl p-6 border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
                 <div class="text-4xl text-slate-400 transition-all duration-300 group-hover:text-cyan-400 group-hover:scale-110">
@@ -588,7 +600,68 @@
         </div>
     </div>
 </section>
+</main>
+<footer data-aos="fade-up" class="border-t border-slate-800 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-6 py-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold">
+                    Gibrael B. <span class="text-cyan-400">Bagaskara</span>
+                </h3>
 
+                <p class="text-slate-400 mt-2 text-sm">
+                    Frontend Developer | Web Developer
+                </p>
+            </div>
+
+            <div class="flex items-center gap-5 text-2xl">
+
+                <a
+                    href="https://github.com/bagas046"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub Profile"
+                    class="text-slate-400 hover:text-cyan-400">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a 
+                    href="https://www.linkedin.com/in/gibrael-bagaskara-97ab83339"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn Profile"
+                    class="text-slate-400 hover:text-cyan-400">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a 
+                    href="mailto:bagaskaragibrael@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Send Email"
+                    class="text-slate-400 hover:text-cyan-400">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="border-t border-slate-800 mt-8 pt-6 text-center">
+
+            <p class="text-slate-500 text-sm">
+                © 2026 Gibrael Bienvernido Bagaskara. All rights reserved.
+            </p>
+
+            <p class="text-slate-600 text-xs mt-2">
+                Built with HTML, Tailwind CSS & JavaScript
+            </p>
+        </div>
+    </div>
+</footer>
+<button
+    id="backToTop"
+    aria-label="Back to top">
 <script>
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
@@ -608,8 +681,86 @@ menuBtn.addEventListener("click", () => {
     }
 
 });
+// Back To Top Button
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+
+        backToTop.classList.remove("opacity-0", "invisible");
+
+        backToTop.classList.add("opacity-100", "visible");
+
+    } else {
+
+        backToTop.classList.add("opacity-0", "invisible");
+
+        backToTop.classList.remove("opacity-100", "visible");
+
+    }
+
+});
+
+backToTop.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
+
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
+
+const activateNav = () => {
+
+    const scrollPos = window.scrollY + 150;
+
+    let currentSection = "home";
+
+    sections.forEach(section => {
+
+        if(scrollPos >= section.offsetTop){
+
+            currentSection = section.id;
+
+        }
+
+    });
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if(link.getAttribute("href") === "#" + currentSection){
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+};
+
+window.addEventListener("scroll", activateNav);
+window.addEventListener("load", activateNav);
+
 </script>
 <script src="https://code.iconify.design/iconify-icon/3.1.1/iconify-icon.min.js"></script>
 <script type="module" src="/src/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 800,
+    once: true,
+    offset: 120,
+});
+</script>
 </body>
 </html>
