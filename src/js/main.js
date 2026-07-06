@@ -8,24 +8,46 @@ AOS.init({
     offset: 100,
     easing: "ease-out-cubic",
 });
+// ======================
+// Hamburger Menu
+// ======================
+
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 
-menuBtn.addEventListener("click", () => {
-
-    mobileMenu.classList.toggle("hidden");
+if (menuBtn && mobileMenu) {
 
     const icon = menuBtn.querySelector("i");
 
-    if (mobileMenu.classList.contains("hidden")) {
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
-    } else {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark");
-    }
+    menuBtn.addEventListener("click", () => {
 
-});
+        mobileMenu.classList.toggle("hidden");
+
+        if (mobileMenu.classList.contains("hidden")) {
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        } else {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+        }
+
+    });
+
+    // Tutup menu setelah memilih salah satu menu
+    mobileMenu.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            mobileMenu.classList.add("hidden");
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        });
+
+    });
+
+}
 // Back To Top Button
 const backToTop = document.getElementById("backToTop");
 
