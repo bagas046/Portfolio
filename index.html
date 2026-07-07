@@ -149,14 +149,16 @@
                 <!-- ⭐ Tombol diletakkan DI SINI -->
                 <div class="flex flex-col sm:flex-row gap-4 mt-10">
 
-                    <a href="#"
-                    class="inline-flex items-center bg-blue-600 hover:bg-blue-700 px-7 py-4 rounded-xl font-semibold transition duration-300">
-                        Download CV
+                    <a href="#projects"
+                       class="px-8 py-4 bg-blue-600 text-white rounded-2xl font-semibold transition duration-300 hover:bg-cyan-500 hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-500/30">
+                       View Portfolio
+                       <i class="fa-solid fa-arrow-down"></i>
                     </a>
 
                     <a href="#about"
                        class="border border-slate-700 hover:border-blue-500 hover:text-blue-400 px-7 py-4 rounded-xl transition">
-                        About Me
+                       About Me
+                       <i class="fa-solid fa-arrow-down"></i>
                     </a>
 
                 </div>
@@ -391,7 +393,7 @@
         </div>
 
         <!-- Skill Cards -->
-        <div data-aos="zoom-in" class="bg-slate-800 rounded-3xl border border-transparent p-8 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
+        <div class="bg-slate-800 rounded-3xl border border-transparent p-8 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
                 <div class="w-14 h-1 bg-cyan-400 rounded-full mb-5"></div>
                 <h3 class="text-2xl font-bold text-cyan-400">
                     💻 Frontend Development
@@ -403,23 +405,23 @@
 
                 <div class="flex flex-wrap gap-3 mt-6">
 
-                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
                         HTML5
                     </span>
 
-                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
                         CSS3
                     </span>
 
-                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
                         JavaScript
                     </span>
 
-                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
                         Bootstrap
                     </span>
 
-                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition duration-300 hover:border-cyan-400 hover:text-cyan-400">
+                    <span class="px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:text-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
                         Tailwind CSS
                     </span>
 
@@ -441,40 +443,58 @@
             </h2>
 
             <p class="text-slate-400 mt-4 max-w-2xl mx-auto leading-7">
-                A selection of projects and internship experiences that demonstrate my skills in web development and problem-solving.
+                Explore my internship experience and personal projects that demonstrate my skills in web development and problem-solving.
             </p>
         </div>
+        <!-- Category -->
+        <div class="hidden lg:grid lg:grid-cols-2 gap-8 mb-8">
 
+            <div>
+                <div class="w-12 h-1 bg-cyan-400 rounded-full mb-4"></div>
+
+                <h3 class="text-2xl font-bold text-white">
+                    Internship Experience
+                </h3>
+
+                <p class="text-slate-400 mt-2">
+                    Professional experience gained during my internship.
+                </p>
+            </div>
+
+            <div>
+                <div class="w-12 h-1 bg-cyan-400 rounded-full mb-4"></div>
+
+                <h3 class="text-2xl font-bold text-white">
+                    Personal Projects
+                </h3>
+
+                <p class="text-slate-400 mt-2">
+                    Personal projects built to strengthen my frontend development skills.
+                </p>
+            </div>
+
+        </div>
         <!-- Project Grid -->
-        
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div data-aos="fade-up" class="group bg-slate-800 rounded-3xl overflow-hidden border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-xl hover:shadow-cyan-500/20">
+            <div class="group bg-slate-800 rounded-3xl overflow-hidden border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
                 <!-- Project Image -->
-                <div class="p-6 bg-slate-900">
+                <div class="h-72 p-6 bg-slate-900 flex justify-center items-center">
                     <img
                         src="/src/assets/images/projek.jpg"
-                        alt="Screenshot of Learning Management System project"
-                        loading="lazy">
+                        class="max-h-full w-full object-contain rounded-xl"
+                        alt="Learning Management System">
                 </div>
                 <!-- Project Content -->
-                <div class="p-8">
+                <div class="p-6 sm:p-8">
                     <!-- Accent Line -->
                     <div class="w-12 h-1 bg-cyan-400 rounded-full mb-6"></div>
-                    <!-- Badge -->
-                    <div class="flex flex-wrap items-center gap-2">
 
-                        <span class="inline-flex items-center px-4 py-2 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-sm font-semibold">
-                            💼 Internship
-                        </span>
-
-                        <span class="inline-flex items-center px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-sm font-semibold">
-                            ✔ Completed
-                        </span>
-
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-sm font-semibold mb-6">
+                        💼 Internship Experience
                     </div>
-
+                    
                     <!-- Title -->
-                    <h3 class="text-2xl font-bold mt-6">
+                    <h3 class="text-2xl font-bold transition-colors duration-300 group-hover:text-cyan-400">
                         Learning Management System (LMS)
                     </h3>
 
@@ -529,6 +549,111 @@
                             🔌 Plugin Integration
                         </span>
 
+                    </div>
+                </div>
+            </div>
+            <div class="group bg-slate-800 rounded-3xl overflow-hidden border border-transparent transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                <!-- Project Image -->
+                <div class="h-72 p-6 bg-slate-900 flex justify-center items-center">
+                    <img
+                        src="/src/assets/images/projek2.jpg"
+                        class="max-h-full w-full object-contain rounded-xl"
+                        alt="Personal Portfolio Website">
+                </div>
+
+                <!-- Project Content -->
+                <div class="p-6 sm:p-8">
+
+                    <!-- Accent Line -->
+                    <div class="w-12 h-1 bg-cyan-400 rounded-full mb-6"></div>
+
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-sm font-semibold mb-6">
+                        💻 Personal Project
+                    </div>
+
+                    <!-- Title -->
+                    <h3 class="text-2xl font-bold transition-colors duration-300 group-hover:text-cyan-400">
+                        Personal Portfolio Website
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-slate-400 mt-5 leading-8">
+                        Designed and developed a fully responsive personal portfolio website
+                        to showcase my professional profile, technical skills, internship
+                        experience, and projects. Built using modern frontend technologies
+                        with a focus on clean UI, responsiveness, and user experience.
+                    </p>
+
+                    <!-- Information -->
+                    <div class="mt-6 space-y-3">
+
+                        <div class="flex items-center gap-3 text-slate-400">
+                            <span class="text-cyan-400">📍</span>
+                            <p>Deployed on Vercel</p>
+                        </div>
+
+                        <div class="flex items-center gap-3 text-slate-400">
+                            <span class="text-cyan-400">🔗</span>
+                            <p>Public GitHub Repository</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Divider -->
+                    <hr class="border-slate-700/60 my-8">
+
+                    <!-- Tech Stack -->
+                    <h4 class="font-semibold text-white">
+                        Tech Stack
+                    </h4>
+
+                    <div class="flex flex-wrap gap-3 mt-4">
+
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                            <i class="devicon-html5-plain colored text-xl"></i>
+                            HTML5
+                        </span>
+
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                            <i class="devicon-css3-plain colored text-xl"></i>
+                            CSS3
+                        </span>
+
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                            <i class="devicon-javascript-plain colored text-xl"></i>
+                            JavaScript
+                        </span>
+
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                            💨 Tailwind CSS
+                        </span>
+
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                            ⚡ Vite
+                        </span>
+
+                        <span class="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
+                            <i class="devicon-git-plain colored text-xl"></i>
+                            Git
+                        </span>
+
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="flex gap-4 mt-8">
+                        <a
+                            href="https://github.com/bagas046/Portfolio"
+                            target="_blank"
+                            class="px-5 py-3 rounded-xl border border-cyan-400 text-cyan-400 transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-400 hover:text-slate-900">
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://gibrael-bagaskara-portfolio.vercel.app"
+                            target="_blank"
+                            class="px-5 py-3 rounded-xl bg-cyan-500 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-400">
+                            Live Demo
+                        </a>
                     </div>
                 </div>
             </div>
@@ -626,7 +751,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub Profile"
-                    class="text-slate-400 hover:text-cyan-400">
+                    class="text-slate-400 transition-all duration-300 hover:text-cyan-400 hover:-translate-y-1 hover:scale-110">
                     <i class="fa-brands fa-github"></i>
                 </a>
 
@@ -635,8 +760,8 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn Profile"
-                    class="text-slate-400 hover:text-cyan-400">
-                    <i class="fa-brands fa-github"></i>
+                    class="text-slate-400 transition-all duration-300 hover:text-cyan-400 hover:-translate-y-1 hover:scale-110">
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
 
                 <a 
@@ -644,8 +769,8 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Send Email"
-                    class="text-slate-400 hover:text-cyan-400">
-                    <i class="fa-brands fa-github"></i>
+                    class="text-slate-400 transition-all duration-300 hover:text-cyan-400 hover:-translate-y-1 hover:scale-110">
+                    <i class="fa-solid fa-envelope"></i>
                 </a>
 
             </div>
